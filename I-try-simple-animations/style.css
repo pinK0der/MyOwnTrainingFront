@@ -1,0 +1,54 @@
+#youSpinMe
+{
+    width: 200px;
+    height: 200px;
+    animation: rotatingAnim;
+    animation-timeline: view();
+}
+#image
+{
+    display: flex;
+    justify-content: center;
+}
+#NicknameDiv
+{
+    background-color: hsl(0, 0%, 24%);
+    color: hsl(180, 100%, 62%);
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+p
+{
+    font-size: 32px;
+}
+@keyframes rotatingAnim
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#AutoShow
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    animation: autoShowAnim both;
+    animation-timeline: view(40% 30%);
+}
+@keyframes autoShowAnim
+{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
