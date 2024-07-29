@@ -9,9 +9,62 @@ button
     border: hsl(0, 0%, 90%);
     background: hsl(0, 0%, 90%);
     font-size: 24px;
+    border-radius: 6%;
+    margin-left: 100px;
 }
-button:hover
+#buttonOne:hover
 {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
-     -10px -10px 10px rgba(255, 255, 255, 1);
+    animation: buttonUp 1s forwards;
+}
+#buttonOne:not(:hover)
+{
+    animation: buttonDown 1s forwards;
+}
+#buttonTwo:hover
+{
+    animation: buttonUpSec 1s forwards;
+}
+#buttonTwo:not(:hover)
+{
+    animation: buttonDownSec 1s forwards;
+}
+@keyframes buttonDownSec
+{
+    100%{
+        box-shadow: none;
+    }
+    0%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3) inset,
+        -10px -10px 10px rgba(255, 255, 255, 1) inset;
+    }
+}
+@keyframes buttonUpSec
+{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3) inset,
+        -10px -10px 10px rgba(255, 255, 255, 1) inset;
+    }
+}
+@keyframes buttonDown
+{
+    100%{
+        box-shadow: none;
+    }
+    0%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+        -10px -10px 10px rgba(255, 255, 255, 1);
+    }
+}
+@keyframes buttonUp
+{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+        -10px -10px 10px rgba(255, 255, 255, 1);
+    }
 }
