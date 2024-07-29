@@ -1,0 +1,17 @@
+body
+{
+    background-color: hsl(0, 0%, 90%);
+}
+button
+{
+    width: 150px;
+    height: 100px;
+    border: hsl(0, 0%, 90%);
+    background: hsl(0, 0%, 90%);
+    font-size: 24px;
+}
+button:hover
+{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+     -10px -10px 10px rgba(255, 255, 255, 1);
+}
