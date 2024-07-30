@@ -12,23 +12,24 @@ button
     border-radius: 6%;
     margin-left: 100px;
 }
-#buttonOne:hover
+.buttonOneAnimation
 {
     animation: buttonUp 1s forwards;
 }
-#buttonOne:not(:hover)
+.buttonOneAnimationDown
 {
     animation: buttonDown 1s forwards;
 }
-#buttonTwo:hover
-{
-    animation: buttonUpSec 1s forwards;
-}
-#buttonTwo:not(:hover)
+
+.buttonTwoAnimation
 {
     animation: buttonDownSec 1s forwards;
 }
-@keyframes buttonDownSec
+.buttonTwoAnimationUp
+{
+    animation: buttonUpSec 1s forwards;
+}
+@keyframes buttonUpSec
 {
     100%{
         box-shadow: none;
@@ -38,7 +39,7 @@ button
         -10px -10px 10px rgba(255, 255, 255, 1) inset;
     }
 }
-@keyframes buttonUpSec
+@keyframes buttonDownSec
 {
     0%{
         box-shadow: none;
