@@ -18,3 +18,35 @@ body
     display: flex;
     justify-content: center;
 }
+.buttonHolder
+{
+    margin-right: 50px;
+    border: black;
+}
+#buttonOne
+{
+    width: 150px;
+    height: 100px;
+    border-radius: 5%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.buttonUpAnimation
+{
+    animation: buttonUp 1s forwards;
+}
+
+@keyframes buttonUp
+{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+        -10px -10px 10px rgba(255, 255, 255, 1);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
