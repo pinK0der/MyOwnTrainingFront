@@ -1,0 +1,81 @@
+body
+{
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: hsl(0, 0%, 20%);
+    overflow-x: hidden;
+}
+section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+.blue
+{
+    background: blue;
+}
+.red
+{
+    background: red;
+}
+.pink
+{
+    background: rgb(228, 27, 144);
+}
+.dark
+{
+    background: hsl(0, 0%, 10%);
+}
+
+.curve
+{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curve::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: hsl(0, 0%, 20%);
+    transform: translate(85%, 60%);
+}
+.curve::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: blue;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+.parent
+{
+    width: 100%;
+    height: 60vh;
+    background: rgba(255, 255, 255, 0.05);
+    overflow: hidden
+}
+.magicpattern { 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M796.5 621.5Q743 743 621.5 857T354 881.5Q208 792 226.5 646t16-276Q240 240 370 149t294.5-34.5q164.5 56.5 175 221t-43 286Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22rgba(106%2C 106%2C 255%2C 1)%22 d=%22M796.5 621.5Q743 743 621.5 857T354 881.5Q208 792 226.5 646t16-276Q240 240 370 149t294.5-34.5q164.5 56.5 175 221t-43 286Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+  
+  
