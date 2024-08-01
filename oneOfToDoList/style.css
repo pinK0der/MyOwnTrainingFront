@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pappins', sans-serif;
+    box-sizing: border-box;
+}
+.centredDiv
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, hsl(176, 100%, 50%), rgb(255, 0, 255));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.platform
+{
+    width: 64vh;
+    height: 80vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    border: 10px rgba(255, 255, 255, 0.5) solid;
+}
+.insideLogo
+{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+.Logo
+{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+#logoText
+{
+    border: none;
+    background: linear-gradient(150deg, hsl(334, 100%, 50%), hsl(228, 100%, 50%));
+    background-clip: text;
+    color: transparent;
+}
+.befo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row
+{
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+}
+input
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button
+{
+    margin-right: 40px;
+    width: 16vh;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.buttonUpAnimation
+{
+    animation: buttonUp 1s forwards;
+}
+@keyframes buttonUp
+{
+    0%{
+        background: transparent;
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+        -10px -10px 10px rgba(255, 255, 255, 1);
+        background: #ff006f;
+        /*backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.05);*/
+    }
+}
+.buttonDownAnimation
+{
+    animation: buttonDown 1s forwards;
+}
+@keyframes buttonDown
+{
+    100%{
+        box-shadow: none;
+        background: transparent;
+    }
+    0%{
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
+        -10px -10px 10px rgba(255, 255, 255, 1);
+        background: #ff006f;
+    }
+}
