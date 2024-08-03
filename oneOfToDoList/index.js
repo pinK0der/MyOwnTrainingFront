@@ -35,6 +35,7 @@ function addTask()
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveData();
 }
 
 tasksList.addEventListener("click", function(e)
@@ -42,9 +43,23 @@ tasksList.addEventListener("click", function(e)
     if(e.target.tagName === "LI")
     {
         e.target.classList.toggle("checked");
+        saveData()
     }
     else if(e.target.tagName === "SPAN")
     {
-        e.target.parentNode.remove();
+        e.target.parentElement.remove();
+        saveData()
     }
 }, false);
+
+function saveData()
+{
+    localStorage.setItem("data", tasksList.innerHTML);
+}
+
+function showTask()
+{
+    tasksList.innerHTML = localStorage.getItem("data");
+}
+
+showTask();

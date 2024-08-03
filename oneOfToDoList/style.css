@@ -140,8 +140,6 @@ ul li span:hover
         box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
         -10px -10px 10px rgba(255, 255, 255, 1);
         background: #ff006f;
-        /*backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.05);*/
     }
 }
 .buttonDownAnimation
