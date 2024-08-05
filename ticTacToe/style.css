@@ -1,0 +1,99 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(220, 11, 220), hsl(236, 51%, 40%));
+}
+html
+{
+    font-size: 16px;
+}
+.wrapper
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.container
+{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-opt
+{
+    height: 22vmin;
+    width: 22vmin;
+    border-radius: 5%;
+    border: 2px solid black;
+    background: transparent;
+    color: hsl(165, 100%, 63%);
+    font-size: 12vmin;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+.buttonBack
+{
+    width: 17.5vmin;
+    height: 10vmin;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.buttonCont
+{
+    display: flex;
+    height: 20vmin;
+    align-items: center;
+    justify-content: center;
+}
+.restart
+{
+    width: 17.5vmin;
+    height: 10vmin;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, rgb(0, 255, 26), rgb(255, 0, 179));
+    background-clip: text;
+    color: transparent;
+    border: none;
+}
+.idkMess
+{
+    background: linear-gradient(90deg, rgb(255, 0, 136), rgb(255, 0, 255));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+.newGame
+{
+    padding: 0.5em 1em;
+    background-color: rgb(0, 0, 0);
+    font-size: 0.6em;
+    color: whitesmoke;
+    border-radius: 0.2em;
+    border: none;
+}
+h2
+{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1em;
+}
+.idkMess.hide
+{
+    display: none;
+}
