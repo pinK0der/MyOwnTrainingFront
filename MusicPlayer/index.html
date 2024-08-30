@@ -7,8 +7,38 @@
 <body>
     <div class="container">
         <div class="playerPlatform">
-            
+            <div class="currentTrack">
+
+                <audio src="music/UnderYourSpell.mp3" id="audio"></audio>
+
+                <div class="imgContainer">
+                    <img src="img/DJ_pinK0der.jpg" alt="music-cover"
+                    id="cover" />
+                </div>
+                <div class="song">
+                    <div class="songNameContainer">
+                        <div class="songName">Song name</div>
+                    </div>
+                    <div class="progressContainer">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button id="prev" class="actionBtn">
+                        <img src="img/backward.png" class="prew">
+                    </button>
+                    <button onclick="togglePlay()" id="playButton" class="actionBtn BIGbtn">
+                        <img src="img/pause.png" class="play">
+                    </button>
+                    <button id="next" class="actionBtn">
+                        <img src="img/forward.png" class="next">
+                    </button>
+                </div>
+            </div>
+            <div class="playlist"></div>
         </div>
     </div>
+
+    <script src="code.js"></script>
 </body>
 </html>
