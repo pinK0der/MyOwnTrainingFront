@@ -54,3 +54,63 @@ function setProgress(e)
 
     audio.currentTime = (clickX / width) * duration;
 }
+
+////////////
+
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const songName = document.querySelector('.songName');
+//const cover = document.getElementById('cover');
+const trackList = document.getElementById('trackList');
+const tracks = trackList.getElementsByTagName('li');
+
+let currentTrackIndex = 0;
+
+const updateTrack = (index) => {
+    const track = tracks[index];
+    const trackName = track.textContent; // Отримуємо назву треку з текстового вмісту <li>
+    const trackSrc = track.getAttribute('data-src');
+    //const trackCover = track.getAttribute('data-cover');
+
+    console.log(trackName);
+
+    // Оновлюємо атрибути елемента <audio>, обкладинку та назву треку
+    audio.src = trackSrc;
+    //cover.src = trackCover;
+    songName.textContent = trackName; // Оновлюємо текст у .songName
+    audio.play(); // Починаємо відтворення
+
+    console.log(songName.textContent);
+
+    // Оновлюємо іконку кнопки відтворення
+    document.getElementById('playIcon').src = 'img/continue.png';
+};
+
+updateTrack(currentTrackIndex);
+
+function nextSong()
+{
+    if(currentTrackIndex === 2)
+    {
+        currentTrackIndex = 0;
+    }
+    else
+    {
+        currentTrackIndex++;
+    }
+
+    updateTrack(currentTrackIndex);
+}
+
+function prevSong()
+{
+    if(currentTrackIndex === 0)
+    {
+        currentTrackIndex = 2;
+    }
+    else
+    {
+        currentTrackIndex--;
+    }
+    updateTrack(currentTrackIndex);
+}

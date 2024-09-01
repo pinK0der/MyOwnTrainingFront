@@ -17,20 +17,20 @@
                 </div>
                 <div class="song">
                     <div class="songNameContainer">
-                        <div class="songName">Song name</div>
+                        <div class="songName" id="songName">Song name</div>
                     </div>
                     <div class="progressContainer" id="progressContainer">
                         <div class="progress" id="progress"></div>
                     </div>
                 </div>
                 <div class="navigation">
-                    <button id="prev" class="actionBtn">
+                    <button onclick="prevSong()" id="prev" class="actionBtn">
                         <img src="img/backward.png" class="prew">
                     </button>
                     <button onclick="togglePlay()" id="playButton" class="actionBtn BIGbtn">
                         <img src="img/pause.png" class="playIcon" id="playIcon">
                     </button>
-                    <button id="next" class="actionBtn">
+                    <button onclick="nextSong()" id="next" class="actionBtn">
                         <img src="img/forward.png" class="next">
                     </button>
                 </div>
@@ -38,7 +38,13 @@
             <div class="volume">
                 <input type="range" class="vertical" id="volumeSlider" min="0" max="100" value="10">
             </div>
-            <div class="playlist"></div>
+            <div class="playlist">
+                <ul id="trackList">
+                    <li data-src="music/UnderYourSpell.mp3" data-cover="img/DJ_pinK0der.jpg">Under Your Spell</li>
+                    <li data-src="music/Starboy.mp3" data-cover="img/DJ_pinK0der.jpg">Starboy</li>
+                    <li data-src="music/funkUniverso.mp3" data-cover="img/DJ_pinK0der.jpg">funk universo</li>
+                </ul>
+            </div>
         </div>
     </div>
 
