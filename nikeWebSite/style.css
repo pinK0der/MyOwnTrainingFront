@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'SUSE', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+nav
+{
+    width: 100%;
+    height: 10vh;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo img
+{
+    margin-left: 20px;
+    width: 100px;
+    filter: drop-shadow(2px 2px 2px white);
+}
+.container .links a
+{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    transition: 0.3s linear;
+}
+.links a::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    background-color: hsl(13, 84%, 52%);
+    height: 3.5px;
+    transition: 0.3s linear;
+}
+.links a:hover::before,
+.links a:hover
+{
+    color: hsl(13, 84%, 52%);
+    width: 100%;
+}
+.container .search
+{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+
+section
+{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .mainContent
+{
+    color:whitesmoke;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainContent h1
+{
+    font-size: clamp(2rem, 1rem + 5vw, 4rem);
+}
+
+.mainContent h2
+{
+    color:hsl(13, 84%, 52%);
+    font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+}
+
+.mainContent p
+{
+    margin-top: 10px;
+    color:hsl(0, 0%, 30%);
+}
+
+.mainContent .order
+{
+    display: flex;
+    margin: 20px 10px;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 7vh;
+}
+
+.order h3
+{
+    font-size: 1.8rem; 
+}
+.order button
+{
+    min-width: 50%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, hsl(13, 84%, 52%) 40%, hsl(13, 84%, 30%));
+    color: white;
+    font-weight: 700;
+    padding: 0 2px;
+    font-size: clamp(0.6rem, 1rem 5vw, 3rem);
+    transition: 0.2s linear;
+}
+.order button:hover
+{
+    box-shadow: 0 0 30px hsl(13, 84%, 52%);
+    background: linear-gradient(to bottom right, hsl(13, 84%, 30%), hsl(13, 84%, 52%) 40%);
+}
+
+.content .image img
+{
+    min-width: 350px;
+    width: 100%;
+    margin-right: 100px;
+    transform: rotate(40deg);
+    filter: drop-shadow(-10px -10px 200px white);
+}
