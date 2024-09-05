@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .settings-container {
+    position: relative;
+  }
+  
+  .settings-button {
+    width: 200px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .settings-menu {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+  }
+  
+  .settings-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .settings-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .settings-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .settings-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .settings-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
